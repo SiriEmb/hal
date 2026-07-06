@@ -1,4 +1,7 @@
 #include <stdio.h>
 #include "hal_api.h"
-void dma_start(void){printf("[HAL] DMA Started\n");}
+void dma_start(int priority)
+{
+    printf("[HAL] DMA Started (priority=%d)\n", priority);
+}
 const char* hal_version(void){return "HAL v1.0";}
